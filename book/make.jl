@@ -54,6 +54,8 @@ if "build" in ARGS
   println("building files...")
   for chap in chaps
     expandcodeblocks(root, joinpath("src", chap), joinpath("build", chap))
+    fname = joinpath("build", chap)
+    run(`sed -i.bak 's/\$\$//g' $fname`)
   end
   println("   ...done building files")
 end
