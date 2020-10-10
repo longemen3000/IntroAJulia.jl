@@ -306,7 +306,7 @@ Escriba la función +entremedio(x,y,z)+ que devuelva +true+ si +x ≤ y ≤ z+, 
 === Más recursividad
 
 Solo se ha cubierto una pequeña parte de Julia pero le puede interesar saber que esta parte ya es un lenguaje de programación _completo_, lo que significa que cualquier cómputo puede expresarse en este lenguaje. Cualquier programa que se haya escrito podría reescribirse usando solo lo que ha aprendido hasta ahora (en realidad, necesitaría algunos comandos para controlar dispositivos como el mouse, discos, etc., pero eso es todo).
-(((recursión)))(((lenguaje de programación completo)))((("lenguaje de programación", "completo", véase "lenguaje de programación completo")))
+(((recursión)))(((lenguaje de programación completo)))
 
 Probar esta afirmación es un ejercicio no trivial realizado por primera vez por Alan Turing, uno de los primeros científicos de la computación (algunos argumentarían que era matemático, pero muchos de los primeros científicos informáticos comenzaron como matemáticos). En consecuencia, esto se conoce como la Tesis de Turing. Para una discusión más completa (y precisa) de la Tesis de Turing, se recomienda el libro de Michael Sipser _Introducción a la Teoría de la Computación_.
 (((Turing, Alan)))(((tesis de Turing)))
@@ -423,7 +423,7 @@ Por supuesto, es un poco extraño suponer que la función funciona correctamente
 === Un Ejemplo Más
 
 Después de los factoriales, el ejemplo más común de una función matemática definida de manera recursiva es +fibonacci+, que tiene la siguiente definición (ver https://en.wikipedia.org/wiki/Fibonacci_number):
-(((fibonnaci function)))
+(((fibonnaci)))
 
 [latexmath]
 ++++

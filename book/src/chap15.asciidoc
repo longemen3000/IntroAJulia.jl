@@ -21,7 +21,7 @@ Hay varias formas en que se podrían representar puntos del plano cartesiano en 
 Crear un nuevo tipo exige un poco más de esfuerzo que las otras dos opciones pero tiene algunas ventajas, como pronto se verá.
 
 Un _tipo compuesto_ definido por el programador también se denomina _estructura_ (struct en inglés). La definición de +estructura+ de un punto se ve así:
-(((tipo compuesto)))(((struct)))((("palabra reservada", "struct", véase "struct")))(((end)))
+(((tipo compuesto)))(((struct)))((("palabra reservada", "struct")))(((end)))
 
 [source,@julia-setup chap15]
 ----
@@ -105,7 +105,7 @@ Esto puede parecer extraño al principio pero tiene varias ventajas:
 === Estructuras Mutables
 
 De ser necesario, se pueden declarar tipos compuestos mutables con la palabra reservada +mutable struct+. A continuación se muestra la definición de un punto mutable:
-(((tipo compuesto mutable)))(((mutable struct)))((("palabra reservada", "mutable struct", véase "mutable struct")))(((MPunto)))((("tipo", "definida por el programador", "MPunto", véase "MPunto")))
+(((tipo compuesto mutable)))(((mutable struct)))((("palabra reservada", "mutable struct")))(((MPunto)))((("tipo", "definida por el programador", "MPunto", véase "MPunto")))
 
 [source,@julia-setup chap15]
 ----
@@ -301,7 +301,7 @@ El uso de alias puede hacer que un programa sea difícil de leer ya que los camb
 (((alias)))
 
 Copiar un objeto es, muchas veces, una alternativa a la creación de un alias. Julia provee una función llamada copy que puede duplicar cualquier objeto:
-(((copiar)))(((deepcopy)))((("función", "Base", "deepcopy", véase "deepcopy")))(((deep copy)))
+(((copiar)))(((deepcopy)))((("función", "Base", "deepcopy", véase "deepcopy")))
 
 [source,@julia-repl-test chap15]
 ----
@@ -405,7 +405,7 @@ Un objeto que se almacena como atributo de otro objeto.
 
 deep copy o copia profunda::
 Copiar el contenido de un objeto, y cualquier objeto embebido en él y, a su vez, cualquier objeto embebido en ellos, y así sucesivamente. Implementado por la función +deepcopy+.
-(((deep copy)))
+(((deepcopy)))
 
 diagrama de objeto::
 Un diagrama que muestra objetos, sus atributos y valores de atributos.

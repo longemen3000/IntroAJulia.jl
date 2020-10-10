@@ -110,7 +110,7 @@ En este ejemplo, la función +foo+ devuelve una función anónima que tiene acce
 === Bloques
 
 Un _bloque_ es una forma de agrupar varias sentencias. Un bloque comienza con la palabra reservada +begin+ y termina con +end+.
-(((begin)))((("palabra reservada", "begin", véase "begin")))(((end)))(((block)))
+(((begin)))((("palabra reservada", "begin")))(((end)))(((bloque)))
 
 En <<chap04>> se presentó la macro +@svg+:
 
@@ -152,7 +152,7 @@ En el ejemplo, la primera macro +@show+ muestra la variable local +x+, la variab
 ==== Bloques +do+
 
 En <<reading_and_writing>> se cierra el archivo después de terminar de escribir en él. Esto se puede hacer automáticamente usando un _Bloque do_:
-(((do)))((("palabra reservada", "do", véase "do")))
+(((do)))((("palabra reservada", "do")))
 
 [source,@julia-repl-test chap19]
 ----
@@ -290,7 +290,7 @@ julia> for val in Channel(fib)
 ==== Tipos Primitivos
 
 Un tipo concreto compuesto por bits se llama _tipo primitivo_. A diferencia de la mayoría de los lenguajes, en Julia se puede declarar nuestros propios tipos primitivos. Los tipos primitivos estándar se definen de la misma manera:
-(((tipo primitivo)))((("palabra reservada", "tipo primitivo", véase "tipo primitivo")))
+(((tipo primitivo)))((("palabra reservada", "tipo primitivo")))
 
 [source,julia]
 ----
@@ -456,10 +456,10 @@ La función +promote+ se detalla en <<promoción>>.
 
 Julia tiene un sistema para convertir argumentos de diferentes tipos a un tipo común. Esto es llamado promoción, y aunque no es automático, se puede realizar fácilmente.
 
-==== Conversion
+==== Conversión
 
 Un valor se puede convertir de un tipo a otro:
-(((conversion)))(((convert)))((("función", "Base", "convert", véase "convert")))
+(((conversión)))(((convert)))((("función", "Base", "convert", véase "convert")))
 
 [source,@julia-repl-test]
 ----
@@ -538,7 +538,7 @@ La función +dump+ muestra objetos expr con anotaciones.
 (((dump)))
 
 Las expresiones se pueden construir directamente con el prefijo +:+ entre paréntesis o usando un bloque quote:
-(((:)))(((quote)))((("palabra reservada", "quote", véase "quote")))
+(((:)))(((quote)))((("palabra reservada", "quote")))
 
 [source,@julia-repl-test chap19]
 ----
@@ -638,7 +638,7 @@ julia> y
 === Datos Faltantes
 
 Los _datos faltantes_ se pueden representar a través del objeto +missing+, que es la instancia única del tipo +Missing+.
-(((datos faltantes)))(((faltantes)))(((Missing)))((("type", "Base", "Missing", véase "Missing")))
+(((datos faltantes)))(((faltantes)))(((Missing)))((("tipo", "Base", "Missing", véase "Missing")))
 
 Los arreglos pueden contener datos que faltan, missing values en inglés:
 

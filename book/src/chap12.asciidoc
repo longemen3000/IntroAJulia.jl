@@ -266,7 +266,7 @@ ERROR: MethodError: no method matching sum(::Int64, ::Int64, ::Int64)
 ==== Ejercicio 12-1
 
 Escriba una función llamada +sumartodo+ que tome cualquier número de argumentos y devuelva su suma.
-(((sumartodo)))((("function", "definida por el programador", "sumartodo", véase "sumartodo")))
+(((sumartodo)))((("función", "definida por el programador", "sumartodo", véase "sumartodo")))
 
 En el mundo de Julia, generalmente se le llama “slurp” ("sorber" en español) a reunir y "splat" ("plaf" en español, como el ruido cuando cae algo) a dispersar.
 

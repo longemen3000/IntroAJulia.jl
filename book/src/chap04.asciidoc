@@ -25,7 +25,7 @@ Los paquetes se pueden instalar en REPL ingresando al modo Pkg REPL con la tecla
 Esto puede demorar un poco.
 
 Antes de que podamos usar las funciones de un módulo, tenemos que importarlo con una sentencia +using+:
-(((using)))((("palabra reservada", "using", véase "using")))(((sentencia using)))((("sentencia", "using", véase "sentencia using")))
+(((using)))((("palabra reservada", "using")))(((sentencia using)))
 
 [source,@julia-repl-test]
 ----
@@ -59,7 +59,7 @@ La palabra reservada +@svg+ ejecuta una macro que dibuja una imagen SVG. Las mac
 Los argumentos de +forward+ son la tortuga y una distancia en píxeles, por lo que el tamaño real depende de su pantalla.
 
 También es posible hacer girar a la tortuga con la función +turn+. Los argumentos de esta función son la tortuga y un ángulo en grados.
-(((turn)))((("function", "IntroAJulia", "turn", véase "turn")))
+(((turn)))((("función", "IntroAJulia", "turn", véase "turn")))
 
 Además, cada tortuga está sosteniendo un lápiz, que puede estar hacia arriba o hacia abajo; si el lápiz está hacia abajo, la tortuga deja un rastro cuando se mueve. <<fig04-1>> muestra el rastro dejado por la tortuga. Las funciones +penup+ y +pendown+ significan "lápiz hacia arriba" y "lápiz hacia abajo".
 (((penup)))((("función", "IntroAJulia", "penup", véase "penup")))(((pendown)))((("función", "IntroAJulia", "pendown", véase "pendown")))
@@ -102,7 +102,7 @@ end
 ----
 
 Se puede hacer lo mismo de manera más concisa con una sentencia +for+:
-(((sentencia for)))((("sentencia", "for", véase "sentencia for")))(((for)))((("palabra reservada", "for", véase "for")))(((in)))((("palabra reservada", "in", véase "in")))
+(((sentencia for)))(((for)))((("palabra reservada", "for")))(((in)))((("palabra reservada", "in")))
 
 [source,@julia-repl-test]
 ----
@@ -330,7 +330,7 @@ end
 ----
 
 La segunda mitad de esta función se parece a +poligono+, pero no se puede reutilizar +poligono+ sin cambiar la interfaz. Se podría generalizar +poligono+ para tomar un +angulo+ como tercer argumento, ¡pero entonces +poligono+ ya no sería un nombre apropiado! En su lugar, se puede llamar a esta función más general +polilinea+:
-(((polyline)))((("function", "definida por el programador", "polyline", véase "polyline")))
+(((polyline)))((("función", "definida por el programador", "polyline", véase "polyline")))
 
 [source,julia]
 ----
@@ -362,7 +362,7 @@ end
 ----
 
 Finalmente, se puede reescribir +circulo+ usando +arco+:
-(((circle)))
+(((círculo)))
 
 [source,julia]
 ----

@@ -111,7 +111,7 @@ Finalmente, el operador +!+ niega una expresión booleana, entonces +!(x>y)+ es 
 === Ejecución Condicional
 
 Para escribir programas útiles, generalmente se necesita verificar condiciones y cambiar el comportamiento del programa acorde a ellas. Las sentencias condicionales permiten llevar esto a cabo. La forma más simple es la sentencia +if+ ("si" en inglés):
-(((sentencia condicional)))(((if)))((("palabra reservada", "if", véase "if")))(((sentencia if)))((("sentencia", "if", véase "sentencia if")))
+(((sentencia condicional)))(((if)))((("palabra reservada", "if")))(((sentencia if)))
 
 [source,julia]
 ----
@@ -121,7 +121,7 @@ end
 ----
 
 La expresión booleana después de +if+ se llama _condición_. Si es verdadera, se ejecuta la instrucción con sangría. Si no, nada ocurre.
-(((condition)))
+(((condición)))
 
 Las sentencias +if+ tienen la misma estructura que las definiciones de función: un encabezado seguido del cuerpo, terminado con la palabra reservada +end+ (en español "fin"). Las sentencias como esta se denominan _sentencias compuestas_.
 (((sentencia compuesta)))(((end)))
@@ -155,7 +155,7 @@ Si el resto de +x+ dividido por 2 es 0, entonces +x+ es par y el programa muestr
 === Condicionales encadenadas
 
 A veces hay más de dos posibilidades y se necesitan más de dos ramas. Una manera de expresar este cómputo es a través de una _condicional encadenada_:
-(((condicional encadenada)))(((elseif)))((("palabra reservada", "elseif", véase "elseif")))
+(((condicional encadenada)))(((elseif)))((("palabra reservada", "elseif")))
 
 [source,julia]
 ----
@@ -298,7 +298,7 @@ end
 ----
 
 Si +n pass:[&lt;]= 0+, se usa la sentencia +return+ para salir de la función. El flujo de la ejecución vuelve inmediatamente a la sentencia de llamada a función y no se ejecutan las líneas restantes de la función.
-(((return)))((("palabra reservada", "return", véase "return")))(((sentencia return)))((("sentencia", "return", véase "return statement")))
+(((return)))((("palabra reservada", "return")))(((sentencia return)))
 
 El resto de la función es similar a +cuenta regresiva+: muestra +s+ y luego se llama a sí misma para mostrar +s+ latexmath:[n-1] veces más de modo que el número de lineas mostradas es latexmath:[1 + (n - 1)], es decir latexmath:[n].
 
@@ -467,7 +467,7 @@ Un operador, denotado con el signo de porcentaje (%), que se utiliza con enteros
 
 expresión booleana::
 Una expresión cuyo valor es +verdadero+ o +falso+.
-(((boolean expression)))
+(((expresión booleana)))
 
 operador relacional::
 Uno de los operadores que compara sus operandos: +==+, +≠+ (+!=+), +>+, +<+, +≥+ (+>=+), and +≤+ (+pass:[&lt;=]+).
@@ -564,7 +564,7 @@ Si cualquiera de las tres longitudes es mayor que la suma de las otras dos, ento
 ====
 
 . Escriba una función llamada +estriangulo+ que tome tres enteros como argumentos, y que imprima “Sí” o “No”, dependiendo de si se puede o no formar un triángulo a partir de barras de las longitudes dadas.
-(((estriangulo)))((("function", "definida por el programador", "estriangulo", véase "estriangulo")))
+(((estriangulo)))((("función", "definida por el programador", "estriangulo", véase "estriangulo")))
 
 . Escriba una función que solicite al usuario ingresar tres longitudes de barras, las convierta en enteros y use +estriangulo+ para verificar si las barras con las longitudes dadas pueden formar un triángulo.
 

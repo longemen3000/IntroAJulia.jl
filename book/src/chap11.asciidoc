@@ -207,7 +207,7 @@ Use +get+ para escribir la función +histograma+ de manera más concisa. Deberí
 === Iteración y Diccionarios 
 
 Es posible recorrer las claves del diccionario con un ciclo +for+. Por ejemplo, +imprimirhist+ imprime cada clave y su valor correspondiente:
-(((imprimirhist)))((("function", "definida por el programador", "imprimirhist", véase "imprimirhist")))
+(((imprimirhist)))((("función", "definida por el programador", "imprimirhist", véase "imprimirhist")))
 
 [source,@julia-setup chap11]
 ----
@@ -402,7 +402,7 @@ Si ejecuta esta versión de +fibonacci+ y la compara con la original, se dará c
 === Variables Globales 
 
 En el ejemplo anterior, el diccionario anteriores se crea fuera de la función, por lo que pertenece al marco especial llamado +Main+. Las variables en +Main+ a veces son llamadas _globales_ porque se puede acceder a ellas desde cualquier función. A diferencia de las variables locales, que desaparecen cuando finaliza su función, las variables globales existen de una llamada de función a la siguiente.
-(((global)))((("palabra reservada", "global", véase "global")))(((variable global)))
+(((global)))((("palabra reservada", "global")))(((variable global)))
 
 Es común usar variables globales como _flags_ o _banderas_; es decir, variables booleanas que indican si una condición es verdadera. Por ejemplo, algunos programas usan una bandera llamada +verbosa+ para controlar el nivel de detalle en la salida:
 (((bandera)))
@@ -445,7 +445,7 @@ end
 ----
 
 La _sentencia global_ le dice al intérprete algo como esto: “En esta función, cuando digo +ha_sido_llamada+, me refiero a la variable global; así que no crees una variable local".
-(((sentencia global)))((("sentencia", "global", véase "sentencia global")))
+(((sentencia global)))
 
 A continuación se muestra un ejemplo que intenta actualizar una variable global:
 
@@ -503,7 +503,7 @@ end
 ----
 
 Para mejorar el rendimiento, puede declarar la variable global como constante. Con esto, ya no se puede reasignar la variable, pero si se refiere a un valor mutable, sí se puede modificar el valor.
-(((const)))((("palabra reservada", "const", véase "const")))(((variable global constante)))
+(((const)))((("palabra reservada", "const")))(((variable global constante)))
 
 [source,@julia-setup]
 ----
@@ -652,7 +652,7 @@ Si hizo <<ex10-10>>, puede comparar la velocidad de esta implementación con el 
 ==== Ejercicio 11-3
 
 Lea la documentación de la función que opera sobre diccionarios +get!+ y úsela para escribir una versión más concisa de +invertirdic+.
-(((get!)))((("function", "Base", "get!", véase "get!")))
+(((get!)))((("función", "Base", "get!", véase "get!")))
 
 [[ex11-3]]
 ==== Ejercicio 11-4

@@ -67,7 +67,7 @@ const nombres_valor = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "
 ----
 
 Las variables +nombres_palo+ y +nombres_valor+ son variables globales. La declaración +const+ significa que la variable solo se puede asignar una vez. Esto resuelve el problema de rendimiento de las variables globales.
-(((variable global)))(((const)))((("palabra reservada", "const", véase "const")))
+(((variable global)))(((const)))((("palabra reservada", "const")))
 
 Ahora se puede implementar un método +show+ apropiado:
 (((show)))
@@ -262,7 +262,7 @@ abstract type ConjuntoDeCartas end
 ----
 
 Se puede crear un nuevo tipo abstracto con la palabra reservada +abstract type+. De manera opcional, se puede especificar un tipo "padre" de una estructura colocando después del nombre de esta, el símbolo +<:+ seguido del nombre de un tipo abstracto existente.
-(((abstract type)))((("palabra reservada", "abstract type", véase "abstract type")))(((tipo)))
+(((abstract type)))((("palabra reservada", "abstract type")))(((tipo)))
 
 Cuando no se proporciona un _supertipo_, el supertipo por defecto es +Any+, es decir, un tipo abstracto predefinido del que todos los objetos son instancias y del que todos los tipos son _subtipos_.
 (((supertipo)))(((subtipo)))

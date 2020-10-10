@@ -142,7 +142,7 @@ Este bucle recorre el arreglo y actualiza cada elemento. En cada iteración del 
 Por otra parte, +length+ devuelve el número de elementos en el arreglo.
 
 Un ciclo +for+ sobre un arreglo vacío nunca ejecuta el cuerpo del bucle:
-(((empty array)))
+(((arreglo vacío)))
 
 [source,@julia-setup]
 ----
@@ -175,7 +175,7 @@ julia> print(t[3:end])
 ----
 
 El operador porción +[:]+ hace una copia de todo el arreglo:
-(((copy)))
+(((copia)))
 
 [source,@julia-repl-test chap10]
 ----
@@ -710,7 +710,7 @@ julia> print(t4)
 Al comienzo de +noborrarprimero+, +t+ y +t3+ se refieren al mismo arreglo. Al final, +t+ se refiere a un nuevo arreglo, pero +t3+ todavía se refiere al arreglo original no modificado.
 
 Una alternativa es escribir una función que cree y devuelva un nuevo arreglo. Por ejemplo, la función +cola+ devuelve todos menos el primer elemento de un arreglo:
-(((cola)))((("function", "definida por el programador", "cola", véase "cola")))
+(((cola)))((("función", "definida por el programador", "cola", véase "cola")))
 
 [source,@julia-setup chap10]
 ----

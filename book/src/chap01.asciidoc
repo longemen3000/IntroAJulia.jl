@@ -52,7 +52,7 @@ println("$(banner)julia>")
 
 Las primeras líneas contienen información sobre el REPL, por lo que esto puede mostrarse diferente en su computadora. Debe verificar que la versión sea al menos +1.0.0+.
 
-El ((("prompt", "en REPL", secondary-sortas="REPL")))última línea es un _prompt_ que indica que el REPL está listo para que se ingrese una instrucción. Si escribe una línea de código y presiona Enter, la REPL muestra el resultado:
+El ((("prompt", "en REPL")))última línea es un _prompt_ que indica que el REPL está listo para que se ingrese una instrucción. Si escribe una línea de código y presiona Enter, la REPL muestra el resultado:
 
 [source,@julia-repl-test]
 ----
@@ -84,7 +84,7 @@ Los paréntesis indican que +println+ es una función. Se estudiarán funciones 
 
 Después de ((("operadores", "aritméticos")))((("operadores aritméticos")))((("matemáticas", "operadores aritméticos")))nuestro programa “¡Hola, mundo!”, el siguiente paso es la aritmética. Julia ((("operadores")))tiene _operadores_, los cuales son símbolos que representan cálculos como la suma y la multiplicación.
 
-Los ((("$$+$$ (operador de suma)", véase "* suma")))((("operador de suma ($$+$$)")))(((($$-$$ (operador de resta)", véase "* subtraction")))((("operador de resta ($$-$$)")))((("$$*$$ (asterisco)", "operador de multiplicación", véase "* asterisco")))((("operador de multiplicación ($$*$$)")))((("asterisco ($$*$$)", "operador de multiplicación"))) operadores +pass:[+]+, +-+, y +*+ realizan las operaciones de suma, resta y multiplicación respectivamente, como se muestra en los siguientes ejemplos:
+Los ((("+ (operador de suma)", véase "suma")))((("operador de suma (&#43;)")))((("&#45; (operador de resta)", véase "subtraction")))((("operador de resta (&#45;)")))((("&#42; (asterisco)", "operador de multiplicación", véase "asterisco")))((("operador de multiplicación (&#42;)")))((("asterisco (&#42;)", "operador de multiplicación"))) operadores +pass:[+]+, +-+, y +*+ realizan las operaciones de suma, resta y multiplicación respectivamente, como se muestra en los siguientes ejemplos:
 
 [source,@julia-repl-test]
 ----
@@ -96,7 +96,7 @@ julia> 6 * 7
 42
 ----
 
-El ((("$$/$$ (operador de división)", véase "* division")))((("division", "operador de división ($$/$$)")))operador +/+ realiza la división:
+El ((("$$/$$ (operador de división)", véase "division")))((("división", "operador de división ($$/$$)")))operador +/+ realiza la división:
 
 [source,@julia-repl-test]
 ----
@@ -106,7 +106,7 @@ julia> 84/2
 
 Quizás se pregunte por qué el resultado es +42.0+ en vez de +42+. Esto será explicado en la siguiente sección.
 
-Finalmente, el ((("$$^$$ (circunflejo)", "operador de exponenciación", véase "* circunflejo")))((("operador de exponenciación ($$^$$)")))((("circunflejo ($$^$$)", "operador de exponenciación"))) operador +^+ realiza la potencición, es decir, eleva un número a una potencia:
+Finalmente, el ((("$$^$$ (circunflejo)", "operador de exponenciación", véase "circunflejo")))((("operador de exponenciación ($$^$$)")))((("circunflejo ($$^$$)", "operador de exponenciación"))) operador +^+ realiza la potencición, es decir, eleva un número a una potencia:
 
 [source,@julia-repl-test]
 ----
@@ -134,7 +134,7 @@ String
 
 Los enteros pertenecen al tipo +Int64+, las cadenas pertenecen a +String+ y los números de punto flotante pertenecen a +Float64+.
 
-¿Qué ((("comillas (&quot;&#x2026;&quot;)", "enclosing strings"))) ((("&quot;&#x2026;&quot; (comillas)", "enclosing strings", véase "* comillas")))pasa con los valores +"2"+ y +"42.0"+? Parecen números, pero están entre comillas como si fueran cadenas. Estos valores también son cadenas:
+¿Qué ((("comillas (&quot;&#x2026;&quot;)", "enclosing strings"))) ((("&quot;&#x2026;&quot; (comillas)", "enclosing strings", véase "comillas")))pasa con los valores +"2"+ y +"42.0"+? Parecen números, pero están entre comillas como si fueran cadenas. Estos valores también son cadenas:
 
 [source,@julia-repl-test]
 ----
@@ -144,7 +144,7 @@ julia> typeof("42.0")
 String
 ----
 
-Si ((("coma ($$,$$)", "no usar en enteros"))) ((("$$, $$(coma)", "no usar en enteros", véase "* coma"))) se quiere escribir un número de grandes dimensiones, se podría caer en la costumbre de usar comas para separar sus cifras, como por ejemplo 1,000,000. Este no es un _entero_ válido en Julia, aunque sí es válido.
+Si ((("coma ($$,$$)", "no usar en enteros"))) ((("$$, $$(coma)", "no usar en enteros", véase "coma"))) se quiere escribir un número de grandes dimensiones, se podría caer en la costumbre de usar comas para separar sus cifras, como por ejemplo 1,000,000. Este no es un _entero_ válido en Julia, aunque sí es válido.
 
 [source,@julia-repl-test]
 ----
@@ -154,7 +154,11 @@ julia> 1,000,000
 
 ¡Esto no es lo que se podría esperar! Julia entiende +1,000,000+ como una secuencia de enteros separados por comas. Más adelante aprenderemos más sobre este tipo de secuencias.
 
-Sin embargo, puede ((("guión bajo (_)", "en enteros"))) ((("_ (guión bajo)", "en enteros", véase "* guión bajo"))) obtener el resultado esperado usando +1_000_000+.
+Sin embargo, puede obtener el resultado esperado usando +1_000_000+.
+((("guión bajo (_)", "en enteros")))
+
+((("_ (guión bajo)", "en enteros", véase "guión bajo (_)")))
+
 
 === Lenguajes formales y naturales
 
@@ -222,7 +226,7 @@ REPL::
 Un programa, ((("REPL (Read-Eval-Print Loop)")))que de manera reiterada lee una entrada, la ejecuta y genera resultados.
 
 prompt::
-Caracteres ((("prompt", "en REPL", secundary-sortas="REPL")))mostrados por el REPL para indicar que está listo para recibir información de entrada de parte del usuario.
+Caracteres ((("prompt", "en REPL")))mostrados por el REPL para indicar que está listo para recibir información de entrada de parte del usuario.
 
 sentencia de impresión (print)::
 Una instrucción ((("sentencia de impresión")))((("output", "sentencia de impresión")))que hace que el REPL de Julia muestre un valor en la pantalla.

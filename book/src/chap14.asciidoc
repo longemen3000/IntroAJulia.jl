@@ -115,10 +115,10 @@ Una cadena como +"/home/ben"+ que identifica un archivo o directorio se llama _r
 (((ruta)))
 
 Un nombre de archivo simple, como +memo.txt+ también se considera una ruta aunque es una _ruta relativa_ porque comienza en el directorio actual. Si el directorio actual es +/home/ben+, el nombre de archivo +memo.txt+ se refiere a +/home/ben/memo.txt+.
-(((ruta relativa)))((("ruta", "relativa", véase "ruta relativa")))
+(((ruta relativa)))
 
 Una ruta que comienza con +/+ no depende del directorio actual. Este tipo de ruta se llama _ruta absoluta_. Para encontrar la ruta absoluta de un archivo, puede usar +abspath+:
-(((ruta absoluta)))((("ruta", "absoluta", véase "ruta absoluta")))(((abspath)))((("función", "Base", "abspath", véase "abspath")))
+(((ruta absoluta)))(((abspath)))((("función", "Base", "abspath", véase "abspath")))
 
 [source,jlcon]
 ----
@@ -205,7 +205,7 @@ Si el usuario intenta abrir un archivo pero no tiene permiso para acceder a él,
 Para evitar estos errores se podrían usar funciones como +ispath+ e +isfile+ pero tomaría mucho tiempo y líneas de código verificar todas las posibilidades.
 
 Es más fácil intentar lidiar con los problemas a medida que ocurren, que es exactamente lo que hace la sentencia +try+. La sintaxis es similar a una sentencia +if+:
-(((sentencia try)))((("sentencia", "try", véase "sentencia try")))(((try)))((("palabra reservada", "try", véase "try")))(((catch)))((("palabra reservada", "catch", véase "catch")))(((end)))
+(((sentencia try)))(((try)))((("palabra reservada", "try")))(((catch)))((("palabra reservada", "catch")))(((end)))
 
 [source,julia]
 ----
@@ -222,7 +222,7 @@ Gestionar una excepción con +try+ recibe el nombre de _capturar_ una excepción
 (((capturar una excepcion)))
 
 Cuando el código realiza cambios de estado o usa recursos, como archivos, generalmente se deben hacer ciertas cosas al finalizar la programación del código, como por ejemplo cerrar los archivos. Las excepciones pueden complicar esta tarea, ya que se podría salir antes de lo esperado de un bloque de código. La palabra reservada +finally+ permite ejecutar un código al salir de un bloque de código determinado, independientemente de cómo salga:
-(((finally)))((("palabra reservada", "finally", véase "finally")))
+(((finally)))((("palabra reservada", "finally")))
 
 [source,julia]
 ----
@@ -465,7 +465,7 @@ julia> include("wc.jl")
 Los módulos permiten crear espacios de trabajo separados, es decir, nuevos global scopes (ámbitos de tipo global). Una sentencia tiene  global scope si tiene efecto en todo el programa.
 
 Un módulo comienza con la palabra reservada +module+ y termina con +end+. Al usar módulos, se evitan los conflictos de nombres entre sus propias definiciones de nivel superior y las que se encuentran en el código de otra persona. +import+ permite controlar qué nombres de otros módulos están visibles y +export+ especifica cuáles de sus nombres son públicos, es decir, aquellos que se pueden usar fuera del módulo sin tener el prefijo del nombre del módulo.
-(((ámbito)))(((module)))((("palabra reservada", "module", véase "module")))(((end)))(((import)))((("palabra reservada", "import", véase "import")))(((export)))((("palabra reservada", "export", véase "export")))(((ContarLineas)))((("module", "ContarLineas", véase "ContarLineas")))((("función", "ContarLineas", "contarlineas", véase "contarlineas")))
+(((ámbito)))(((module)))((("palabra reservada", "module")))(((end)))(((import)))((("palabra reservada", "import")))(((export)))((("palabra reservada", "export")))(((ContarLineas)))((("module", "ContarLineas", véase "ContarLineas")))((("función", "ContarLineas", "contarlineas", véase "contarlineas")))
 
 [source,julia]
 ----

@@ -101,10 +101,10 @@ julia> sin(radianes)
 ----
 
 El valor de la variable +π+ es una aproximación de punto flotante de latexmath:[\pi ], con una precisión de aproximadamente 16 dígitos.
-(((Pi)))
+(((pi)))
 
 Si sabe de trigonometría, puede verificar el resultado anterior comparándolo con la raíz cuadrada de dos dividido por dos:
-(((sqrt)))((("función", "Base", "sqrt", véase "sqrt")))((("function raíz", véase "sqrt")))
+(((sqrt)))((("función", "Base", "sqrt", véase "sqrt")))((("función raíz", véase "sqrt")))
 
 [source,@julia-repl-test]
 ----
@@ -153,7 +153,7 @@ ERROR: syntax: "60" is not a valid function argument name
 === Agregar nuevas funciones
 
 Hasta ahora, solo hemos usado las funciones integradas en Julia, pero también es posible agregar nuevas funciones. Una _definición de función_ especifica el nombre de una nueva función y la secuencia de sentencias que se ejecutan cuando se llama a la función. A continuación se muestra un ejemplo:
-(((función)))(((definición de función)))(((función definida por el programador)))(((imprimirletras)))((("función", "definido por el programador", "imprimirletras", véase "imprimirletras")))
+(((function)))(((función)))(((definición de función)))(((función definida por el programador)))(((imprimirletras)))((("función", "definido por el programador", "imprimirletras", véase "imprimirletras")))
 
 [source,@julia-setup chap03]
 ----
@@ -164,13 +164,13 @@ end
 ----
 
 +function+ es una palabra reservada que indica que esta es una definición de función. El nombre de la función es +imprimirletras+. Las reglas para los nombres de funciones son las mismas que para los nombres de variables: pueden contener casi todos los caracteres Unicode (consulte <<caracteres>>), pero el primer carácter no puede ser un número. No puede usar una palabra reservada como nombre de una función, y debe evitar tener una variable y una función con el mismo nombre.
-((("palabra reservada", "función", véase "función")))(((argumento)))(((carácter Unicode)))
+((("palabra reservada", "function")))(((argumento)))(((carácter Unicode)))
 
 Los paréntesis vacíos después del nombre indican que esta función no tiene argumentos.
 (((paréntesis, vacíos)))
 
 La primera línea de una definición de función se llama _encabezado_; el resto se llama _cuerpo_. El cuerpo termina con la palabra reservada +end+ y puede contener todas las sentencias que desee. Para facilitar la lectura, el cuerpo de la función debería tener sangría.
-(((encabezado)))(((cuerpo)))(((end)))((("palabra reservada", "final", véase "final")))(((sangría)))
+(((encabezado)))(((cuerpo)))(((end)))((("palabra reservada", "final")))(((sangría)))
 
 Las comillas deben ser "comillas rectas" (""), generalmente ubicadas junto a la tecla Enter en el teclado. Las "comillas inglesas" (“”)no son válidas en Julia.
 (((comillas)))
@@ -450,10 +450,10 @@ nothing
 ----
 
 Para imprimir el valor +nothing+, debe usar la función +show+ que es como la función +print+ pero permite el valor +nothing+.
-(((show))) ((("function", "Base", "show",  véase "show")))
+(((show))) ((("función", "Base", "show",  véase "show")))
 
 El valor +nothing+ no es lo mismo que la cadena +"nothing"+. Es un valor especial que tiene su propio tipo:
-(((nothing))) ((("type", "Base", "nothing",  véase "nothing")))
+(((nothing))) ((("tipo", "Base", "nothing",  véase "nothing")))
 
 [source, @julia-repl-test]
 ----

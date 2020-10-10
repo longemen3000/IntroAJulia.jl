@@ -9,7 +9,7 @@ Una de las características más poderosas de un lenguaje de programación es la
 === Sentencias de asignación
 
 Una _sentencia de asignación_ crea una nueva variable y le asigna un valor:
-(((sentencia de asignación)))((("sentencia", "asignación", véase "sentencia de asignación")))(((=, véase "sentencia de asignación"))) (((pi)))((("π",  véase "pi")))
+(((sentencia de asignación)))(((=, véase "sentencia de asignación"))) (((pi)))((("π",  véase "pi")))
 
 [source,@julia-repl-test chap02]
 ----
@@ -365,7 +365,7 @@ Un error en un programa que hace que sea imposible de analizar (y, por lo tanto,
 
 error en tiempo de ejecución o excepción::
 Un error que se detecta mientras se ejecuta el programa.
-(((Error de tiempo de ejecución)))
+(((error de tiempo de ejecución)))
 
 semántica::
 El significado de un programa.
